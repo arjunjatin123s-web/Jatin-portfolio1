@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jatin | Premium BCA Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#09090f;
+color:white;
+overflow-x:hidden;
+}
+
+body::before{
+content:'';
+position:fixed;
+width:500px;
+height:500px;
+background:linear-gradient(#4d5dfb,#b91dff);
+filter:blur(180px);
+top:-200px;
+left:-200px;
+opacity:.4;
+z-index:-1;
+}
+
+body::after{
+content:'';
+position:fixed;
+width:500px;
+height:500px;
+background:#00d9ff;
+filter:blur(180px);
+bottom:-200px;
+right:-200px;
+opacity:.3;
+z-index:-1;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+padding:20px 8%;
+position:fixed;
+width:100%;
+backdrop-filter:blur(20px);
+z-index:999;
+background:rgba(0,0,0,.2);
+font-size:25px;
+}
+
+.logo{
+background:linear-gradient(to right,#00d9ff,#b91dff);
+
+-webkit-background-clip:text;
+background-clip:text;
+
+-webkit-text-fill-color:transparent;
+color:transparent;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+font-size:18px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:100px 10%;
+gap:50px;
+}
+
+.hero-text{
+flex:1;
+}
+
+.hero-text h3{
+color:#00d9ff;
+margin-bottom:10px;
+}
+
+.hero-text h1{
+font-size:55px;
+}
+
+.hero-text span{
+background:linear-gradient(to right,#00d9ff,#b91dff);
+
+-webkit-background-clip:text;
+background-clip:text;
+
+-webkit-text-fill-color:transparent;
+color:transparent;
+}
+.hero-text p{
+margin:20px 0;
+line-height:1.8;
+opacity:.8;
+}
+
+.btn{
+display:inline-block;
+padding:14px 30px;
+background:linear-gradient(45deg,#00d9ff,#b91dff);
+border-radius:40px;
+color:white;
+text-decoration:none;
+font-weight:600;
+transition:.5s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+}
+
+.hero-image{
+flex:1;
+display:flex;
+justify-content:center;
+}
+
+.circle{
+width:320px;
+height:320px;
+border-radius:50%;
+background:linear-gradient(45deg,#00d9ff,#b91dff);
+padding:8px;
+animation:rotate 8s linear infinite;
+}
+
+.circle img{
+width:100%;
+height:100%;
+border-radius:50%;
+object-fit:cover;
+border:8px solid #09090f;
+}
+
+@keyframes rotate{
+100%{
+transform:rotate(360deg);
+}
+}
+
+section{
+padding:80px 10%;
+}
+
+.title{
+font-size:35px;
+margin-bottom:40px;
+text-align:center;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:rgba(255,255,255,.05);
+padding:30px;
+border-radius:20px;
+backdrop-filter:blur(15px);
+transition:.5s;
+border:1px solid rgba(255,255,255,.1);
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.skills span{
+display:inline-block;
+padding:8px 15px;
+background:#151525;
+margin:8px;
+border-radius:20px;
+}
+
+.timeline{
+border-left:3px solid #00d9ff;
+padding-left:30px;
+}
+
+.timeline div{
+margin-bottom:30px;
+}
+
+.contact{
+text-align:center;
+}
+
+footer{
+padding:30px;
+text-align:center;
+opacity:.7;
+}
+
+.typing{
+color:#00d9ff;
+font-weight:600;
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+<div class="logo">PORTFOLIO</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+
+<section class="hero">
+
+<div class="hero-text">
+<h3>Hello, I'm</h3>
+
+<h1>Jatin <span>Sharma</span></h1>
+
+<h2 class="typing"></h2>
+
+<p>
+Passionate BCA Graduate focused on Web Development,
+Programming and creating modern digital experiences.
+I love building creative projects and learning new technologies.
+</p>
+
+<a href="assets/jatin Resume.pdf.pdf" download class="btn">Download Resume</a>
+
+</div>
+
+<div class="hero-image">
+
+<div class="circle">
+<img src="assets/Screenshot_20251202-224755.jpg ">
+</div>
+
+</div>
+
+</section>
+
+
+<section id="about">
+
+<h2 class="title">About Me</h2>
+
+<div class="card">
+
+<p>
+Recently completed Bachelor of Computer Applications (BCA).
+Strong interest in Full Stack Development, UI design,
+problem-solving and modern technologies.
+</p>
+
+</div>
+
+</section>
+
+
+
+<section id="skills">
+
+<h2 class="title">Skills</h2>
+
+<div class="card skills">
+
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript(Basic)</span>
+<span>React.js</span>
+<span>Python(Basic)</span>
+<span>MySQL</span>
+<span>Git HUB</span>
+
+
+</div>
+
+</section>
+
+
+
+<section id="projects">
+
+<h2 class="title">Projects</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Society complaint management system</h3>
+<br>
+<p>
+Manage society complaints and track their resolution
+</p>
+</div>
+
+
+<div class="card">
+<h3>Weather App</h3>
+<br>
+<p>
+Real-time weather updates using APIs
+</p>
+</div>
+
+
+<div class="card">
+<h3>E-Commerce Website</h3>
+<br>
+<p>
+Responsive shopping website with cart functionality
+</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="education">
+
+<h2 class="title">Education</h2>
+
+<div class="timeline">
+
+<div>
+<h3>BCA</h3>
+<p>Gandhi Memorial National College,Ambala cantt. | 2023-2026</p>
+</div>
+
+<div>
+<h3>12th</h3>
+<p>Mata Rukmani Rai School Shahabad(M.)</p>
+</div>
+
+<div>
+<h3>10th</h3>
+<p>Mata Rukmani Rai School Shahabad(M.)</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="contact">
+
+<h2 class="title">Contact Me</h2>
+
+<div class="contact">
+
+<p>Email: arjun7015120914@gmail.com</p>
+<br>
+
+<p>GitHub: github.com/jatin</p>
+<br>
+
+<p>LinkedIn: linkedin.com/in/jatin</p>
+
+</div>
+
+</section>
+
+
+<footer>
+© 2026 Jatin Portfolio | 
+</footer>
+
+
+<script>
+
+const text=[
+"BCA Graduate",
+"Web Developer",
+"Programmer",
+];
+
+let i=0;
+let j=0;
+let current="";
+let isDeleting=false;
+
+function type(){
+
+current=text[i];
+
+if(!isDeleting){
+
+document.querySelector(".typing")
+.innerHTML=current.substring(0,j++);
+
+if(j>current.length){
+isDeleting=true;
+setTimeout(type,1000);
+return;
+}
+
+}
+
+else{
+
+document.querySelector(".typing")
+.innerHTML=current.substring(0,j--);
+
+if(j==0){
+isDeleting=false;
+i++;
+
+if(i==text.length){
+i=0;
+}
+}
+
+}
+
+setTimeout(type,isDeleting?50:100)
+
+}
+
+type();
+
+</script>
+
+</body>
+</html>
